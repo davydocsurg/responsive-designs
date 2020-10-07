@@ -1,0 +1,67 @@
+body {
+ margin: 0;
+ padding: 0%;
+ /* box-sizing: border-box; */
+}
+
+html {
+	scroll-behavior: smooth;
+	/* background: black; */
+	/* filter: invert(1) hue-rotate(180deg); */
+}
+
+h1{
+	font-size: 5rem;
+	background: linear-gradient(to left, blue, purple);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline;
+}
+
+div {
+	width: 80%;
+	height: 100vh;
+	background: chartreuse;
+	text-align: center;
+	margin: auto 0 0 0;
+	line-height: 100vh;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, .4), 0px 40px 40px rgba(0, 0, 0, .5);
+	animation: fade 1s ease;
+}
+
+div button {
+	padding: 2rem;
+	font-size: 2.3rem;
+	border: none;
+	cursor: pointer;
+	animation: fade 1s ease forwards;
+	background: chartreuse;
+}
+
+button {
+	animation: fade 1s ease forwards;
+}
+
+@keyframes fade {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+p::selection {
+	background: rgb(255, 145, 2);
+	color: wheat;
+}
+
+p::first-letter {
+	font-size: 3rem;
+	font-weight: bold;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div, section {
+	height: 100vh;
+}

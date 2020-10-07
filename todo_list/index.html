@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="stylesheet" href="./assets/font-awesome.min3b90.css" />
+    <link rel="stylesheet" href="./assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/bootstrap.css" />
+    <!-- <link rel="stylesheet" href="./assets/style.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/poppins/v12/pxiByp8kv8JHgFVrLBT5Z1xlEA.ttf.tmp">
+		<link rel="stylesheet" href="./assets/poppins/v12/pxiByp8kv8JHgFVrLCz7Z1xlEA.ttf.tmp">
+		<link rel="stylesheet" href="./assets/poppins/v12/pxiByp8kv8JHgFVrLDD4Z1xlEA.ttf.tmp">
+		<link rel="stylesheet" href="./assets/poppins/v12/pxiByp8kv8JHgFVrLDz8Z1xlEA.ttf">
+		<link rel="stylesheet" href="./assets/poppins/v12/pxiByp8kv8JHgFVrLEj6Z1xlEA.ttf.tmp">
+		<link rel="stylesheet" href="./assets/poppins/v12/pxiByp8kv8JHgFVrLFj_Z1xlEA.ttf">
+		<link rel="stylesheet" href="./assets/poppins/v12/pxiByp8kv8JHgFVrLGT9Z1xlEA.ttf.tmp">
+		<link rel="stylesheet" href="./assets/poppins/v12/pxiEyp8kv8JHgFVrJJfedw.ttf.tmp">
+		<link rel="stylesheet" href="./assets/poppins/v12/pxiGyp8kv8JHgFVrLPTucHtF.ttf"> -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <header><h1>My todo List</h1></header>
+
+    <form>
+      <input type="text" class="todo-input" autofocus />
+      <button class="todo-button">
+        <i class="fas fa-grin-tongue"></i>
+        <svg
+          class="svg-inline--fa fa-plus-square fa-w-14 text-900 fs-3"
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fas"
+          data-icon="plus-square"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+          data-fa-i2svg=""
+        >
+          <path
+            fill="currentColor"
+            d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-32 252c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92H92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"
+          ></path>
+        </svg>
+      </button>
+
+      <div class="select">
+        <select name="todos" class="filter-todo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="incomplete">Incomplete</option>
+        </select>
+      </div>
+    </form>
+
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+    <script src="./web.js"></script>
+  </body>
+</html>
