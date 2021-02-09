@@ -46,6 +46,10 @@ form button {
 
 }
 
+.btn-disp {
+	display: none;
+}
+
 form button:hover {
 	background: #d84921;
 	color: white;

@@ -7,12 +7,15 @@ const filterOpts = document.querySelector(".filter-todo");
 // event listeners
 document.addEventListener("DOMContentLoaded", fetchMyTodos);
 todoButton.addEventListener("click", addTodo);
-todoInput.addEventListener("keydown.enter", addTodo);
+// todoInput.addEventListener("keydown.enter", addTodo);
 todoList.addEventListener("click", deleteTodo);
 filterOpts.addEventListener("click", filterTodo);
 
 // functions
 function addTodo(e) {
+  if (todoInput.value < 0) {
+    todoButton.classList.add("btn-disp");
+  }
   // prevent default
   e.preventDefault();
   // todo div
